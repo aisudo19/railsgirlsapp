@@ -1,24 +1,29 @@
-# README
+アプリ作成コマンド
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+rails new railsgirls
+```
 
-Things you may want to cover:
+アプリの起動コマンド
 
-* Ruby version
+```
+rails server
+```
 
-* System dependencies
+Idea の scaffold を作る
 
-* Configuration
+```
+rails generate scaffold idea name:string description:text picture:string
+```
 
-* Database creation
+db の migrate
 
-* Database initialization
+```
+rails db:migrate
+```
 
-* How to run the test suite
+pages コントローラ、about メソッドの追加・pages/about ページの追加
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails generate controller pages about
+```
